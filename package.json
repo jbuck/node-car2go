@@ -1,0 +1,22 @@
+{
+  "name": "car2go",
+  "version": "0.0.0",
+  "description": "Car2Go REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbuck/node-car2go.git"
+  },
+  "keywords": [
+    "car2go",
+    "c2g"
+  ],
+  "author": "Jon Buckley <jon@jbuckley.ca>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jbuck/node-car2go/issues"
+  }
+}
