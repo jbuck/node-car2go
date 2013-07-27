@@ -21,5 +21,9 @@
   },
   "dependencies": {
     "request": "~2.25.0"
+  },
+  "devDependencies": {
+    "nock": "~0.22.1",
+    "specify": "~1.1.2"
   }
 }
