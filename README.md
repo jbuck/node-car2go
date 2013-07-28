@@ -14,8 +14,9 @@ var car2go = require("car2go").createClient({
   secret: MY_OAUTH_SECRET
 });
 
-// get a list of available cars in Toronto
+// get a list of available cars in Toronto in JSON format
 car2go.vehicles({
+  format: "json",
   loc: "Toronto"
 }, function(err, cars) {
   if (err) {
@@ -65,4 +66,38 @@ car2go.locations(function(err, locations) {
   },
   ... more cities
 ]
+```
+
+### Vehicles
+
+List available vehicles in a city
+
+#### Options
+
+* `loc` *Required* - The city to list vehicles in.
+* `format` - The output format. Must be `kml` or `json`, defaults to `kml`.
+
+#### Usage
+
+```javascript
+car2go.vehicles({
+  format: "json",
+  loc: "Toronto"
+}, function(err, vehicles) {
+  console.log(vehicles);
+});
+
+// Output
+
+{
+  address: 'Green P-141 Greenlaw Ave(S of St Clair  Ave W)',
+  coordinates: [ -79.44774, 43.6762, 0 ],
+  engineType: 'CE',
+  exterior: 'GOOD',
+  fuel: 100,
+  interior: 'GOOD',
+  name: 'BPXL726',
+  vin: 'WMEEJ3BA8DK643640'
+},
+... more cars
 ```
