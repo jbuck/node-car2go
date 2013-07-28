@@ -14,7 +14,7 @@ specify("locations success", function(assert) {
       "content-type": "application/json; charset=utf-8"
     });
 
-  validClient.locations({}, function(err, locations) {
+  validClient.locations(function(err, locations) {
     assert.equal(err, null);
     assert.ok(Array.isArray(locations));
     assert.ok(locations.length > 0);
@@ -29,7 +29,7 @@ specify("locations invalid consumer_key", function(assert) {
       "content-type": "text/html;charset=ISO-8859-1"
     });
 
-  invalidClient.locations({}, function(err, locations) {
+  invalidClient.locations(function(err, locations) {
     assert.equal(err, "Error 401: Invalid consumerkey");
     assert.equal(locations);
   });
