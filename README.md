@@ -88,16 +88,17 @@ car2go.vehicles({
 });
 
 // Output
-
-{
-  address: 'Green P-141 Greenlaw Ave(S of St Clair  Ave W)',
-  coordinates: [ -79.44774, 43.6762, 0 ],
-  engineType: 'CE',
-  exterior: 'GOOD',
-  fuel: 100,
-  interior: 'GOOD',
-  name: 'BPXL726',
-  vin: 'WMEEJ3BA8DK643640'
-},
+[
+  {
+    address: 'Green P-141 Greenlaw Ave(S of St Clair  Ave W)',
+    coordinates: [ -79.44774, 43.6762, 0 ],
+    engineType: 'CE',
+    exterior: 'GOOD',
+    fuel: 100,
+    interior: 'GOOD',
+    name: 'BPXL726',
+    vin: 'WMEEJ3BA8DK643640'
+  },
+]
 ... more cars
 ```
