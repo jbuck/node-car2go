@@ -18,7 +18,6 @@ specify("locations success", function(assert) {
     assert.equal(err, null);
     assert.ok(Array.isArray(locations));
     assert.ok(locations.length > 0);
-    assert.ok(scope.isDone());
   });
 });
 
