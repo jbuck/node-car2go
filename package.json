@@ -1,6 +1,6 @@
 {
   "name": "car2go",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Car2Go REST API",
   "main": "index.js",
   "scripts": {
