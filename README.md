@@ -14,10 +14,9 @@ var car2go = require("car2go").createClient({
   secret: MY_OAUTH_SECRET
 });
 
-// get a list of available cars in Toronto in JSON format
+// get a list of available cars in Toronto
 car2go.vehicles({
-  loc: "Toronto",
-  format: "json"
+  loc: "Toronto"
 }, function(err, cars) {
   if (err) {
     return console.log(err);
