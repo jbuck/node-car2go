@@ -47,7 +47,7 @@ specify("vehicles invalid location", function(assert) {
     });
 
   invalidClient.vehicles({
-    format: "json",
+    format: "json"
   }, function(err, vehicles) {
     assert.equal(err, "Error 401: Invalid location");
     assert.equal(vehicles);
@@ -69,5 +69,3 @@ specify("vehicles invalid consumer_key", function(assert) {
     assert.equal(vehicles);
   });
 });
-
-specify.run();

@@ -33,5 +33,3 @@ specify("locations invalid consumer_key", function(assert) {
     assert.equal(locations);
   });
 });
-
-specify.run();

@@ -4,7 +4,7 @@
   "description": "Car2Go REST API",
   "main": "index.js",
   "scripts": {
-    "test": "node test/*"
+    "test": "node test/all.js"
   },
   "repository": {
     "type": "git",
