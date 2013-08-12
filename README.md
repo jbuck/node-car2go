@@ -25,6 +25,18 @@ car2go.vehicles({
 
   console.log(cars);
 });
+
+// get the KML that describes the Denver area in XML format
+car2go.operationareas({
+  format: "kml",
+  loc: "Denver"
+}, function(err, areas) {
+  if (err) {
+    return console.log(err);
+  }
+
+  console.log(areas);
+});
 ```
 
 ## API
@@ -101,4 +113,33 @@ car2go.vehicles({
   },
 ]
 ... more cars
+```
+
+### Operating Area
+
+Get the geography associated with a city
+
+#### Options
+
+* `loc` *Required* - The city to list vehicles in.
+* `format` - The output format. Must be `kml` or `json`, defaults to `kml`.
+
+#### Usage
+
+```javascript
+car2go.operationareas({
+  format: "json",
+  loc: "Denver"
+}, function(err, area) {
+  console.log(area);
+});
+
+// Output
+[
+    {
+      "coordinates": [
+        -104.922104,
+        39.77849,
+        0,
+... more points
 ```
