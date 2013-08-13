@@ -143,3 +143,35 @@ car2go.operationareas({
         0,
 ... more points
 ```
+
+### Gas Stations
+
+Get the gas stations in a city
+
+#### Options
+
+* `loc` *Required* - The city to list vehicles in.
+* `format` - The output format. Must be `kml` or `json`, defaults to `kml`.
+
+#### Usage
+
+```javascript
+car2go.gasstations({
+  format: "json",
+  loc: "ulm"
+}, function(err, stations) {
+  console.log(stations);
+});
+
+// Output
+[
+  {
+    "coordinates": [
+      9.98799,
+      48.35883,
+      0
+    ],
+    "name": "Shell, Hauptstraße 12"
+  },
+... more stations
+```
