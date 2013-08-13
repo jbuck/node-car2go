@@ -1,4 +1,4 @@
-# car2go
+# car2go [![Build Status](https://travis-ci.org/jbuck/node-car2go.png)](https://travis-ci.org/jbuck/node-car2go)
 
 Car2Go REST API
 
